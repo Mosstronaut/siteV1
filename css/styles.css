@@ -1,0 +1,196 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+/*Globals*/
+/*End Globals*/
+
+/*Desktop Styles*/
+
+/*Header*/
+#headNav{
+  width: 100%;
+  height: 100px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: fixed;
+  z-index: 10;
+  background-color: #efe9f4;
+}
+
+.headLogo{
+  position: relative;
+  max-height: 95px;
+  left: 5%;
+}
+
+.fullHead{
+  height: 100%;
+  object-fit: contain;
+}
+
+.headSocial{
+
+}
+
+.headSocIcon{
+  display: inline-flex;
+  position: relative;
+  margin-top: 5%;
+  left: 60%;
+}
+
+.headFace,.headTwitt,.headInsta{
+  height: 50px;
+  width: 50px;
+  margin-left: 15%;
+  fill: #ff6f61;
+}
+
+/*End Header*/
+
+/*Hero*/
+  #heroDiv{
+    height: 800px;
+    width: 100%;
+    top: 100px;
+  }
+
+  .heroImage{
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .heroImg{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .heroText{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .heroText h1{
+    font-family: 'Blinker', sans-serif;
+    font-weight: 600;
+    color: #efe9f4;
+  }
+
+  .heroText strong{
+    color: #ff6f61
+  }
+
+  .heroText p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #efe9f4;
+  }
+/*End Hero*/
+
+/*About*/
+  #aboutDiv{
+    height: 450px;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+  }
+
+  .aboutCont{
+    height: 100%;
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    display: inline-flex;
+  }
+
+  .about1{
+    width: 100%;
+    height:100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about1Butt.active{
+    color: #efe9f4;
+  }
+
+  #about1-1{
+    height: 50%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://drive.google.com/uc?export=view&id=15SL8ug0HfCtjmaVI_G4iBmpUTCGl7tRw);
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+  }
+
+  #about1-1:hover{
+    background-image: linear-gradient(rgba(255,111,97,0.5), rgba(255,111,97,0.5)), url(https://drive.google.com/uc?export=view&id=15SL8ug0HfCtjmaVI_G4iBmpUTCGl7tRw);
+    color: #efe9f4;
+  }
+
+  #about2-1{
+    height: 50%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://drive.google.com/uc?export=view&id=1w2sj-bwR-k0DSNjcIc5BwhYwWn2lyzu-);
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 3px solid black;
+  }
+
+  #about2-1:hover{
+    background-image: linear-gradient(rgba(255,111,97,0.5), rgba(255,111,97,0.5)), url(https://drive.google.com/uc?export=view&id=1w2sj-bwR-k0DSNjcIc5BwhYwWn2lyzu-);
+    color: #efe9f4;
+  }
+
+  .about2{
+    width: 100%;
+    height:100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .aboutParags{
+    height: 85%;
+    width: 90%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutInfo{
+    color: #ff6f61;
+  }
+
+  .aboutList{
+    color: #403d39;
+  }
+
+  #forUsers{
+    display: none;
+    animation: fadeEffect 1s;
+  }
+
+  #forRests{
+    display: none;
+    animation: fadeEffect 1s;
+  }
+
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+/*End About*/
+
+/*End Desktop Styles*/
