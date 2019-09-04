@@ -4,6 +4,9 @@
 }
 
 /*Globals*/
+  #burger{
+    display: none;
+  }
 /*End Globals*/
 
 /*Desktop Styles*/
@@ -17,6 +20,9 @@
   position: fixed;
   z-index: 10;
   background-color: #efe9f4;
+  -webkit-box-shadow: 5px 5px 28px #111;
+  -moz-box-shadow: 5px 5px 28px #111;
+  box-shadow: 5px 5px 28px #111;
 }
 
 .headLogo{
@@ -34,11 +40,11 @@
 
 }
 
-.headSocIcon{
+#socials{
   display: inline-flex;
   position: relative;
-  margin-top: 5%;
-  left: 60%;
+  margin-top: 8%;
+  left: 80%;
 }
 
 .headFace,.headTwitt,.headInsta{
@@ -243,4 +249,115 @@
     }
 /*End CTA*/
 
+/*Footer*/
+  #footerDiv{
+    height: 300px;
+    width: 100%;
+    margin-top: 8%;
+    background-color: #403d39;
+    border-top: 3px solid grey;
+  }
+
+  .footerCont{
+    height: 100%;
+  }
+
+  .footerCR{
+    height: 90%;
+  }
+
+  .footLogo{
+    height: 80%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footImg{
+    height: 70%;
+    object-fit: contain;
+    margin-top: 13%;
+    margin-left: 20%;
+  }
+
+  .footCR{
+    height: 80%;
+    width: 80%;
+    color: #efe9f4;
+    margin-left: 25%;
+  }
+/*End Footer*/
+
 /*End Desktop Styles*/
+
+/*Mobile Styles*/
+  @media screen and (max-width: 750px) {
+/*Mobile Burger Menu*/
+    #socials{
+      display: none;
+    }
+
+    #burger{
+      display: inline-block;
+      cursor: pointer;
+      top: 30%;
+    }
+
+    .bar1, .bar2, .bar3{
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .change .bar1{
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2{
+      opacity: 0;
+    }
+
+    .change .bar3{
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  /*End Mobile Burger Menu*/
+
+  /*Mobile Menu Overlay*/
+    .overlay{
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    .overlay-content{
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .overlay a{
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #efe9f4;
+      display: block;
+      transition: 0.3s;
+    }
+
+  /*End Mobile Menu Overlay*/
+
+  }
+/*End Mobile Styles*/

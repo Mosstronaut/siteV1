@@ -14,3 +14,16 @@ function aboutTabs(evt, tabShow){
   document.getElementById(tabShow).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+function openNav(){
+  var y;
+  y = document.getElementsByClassName("headBurger");
+
+  if (y.classList.contains("active")) {
+    document.getElementById("mobNav").style.width = 0%;
+    y.classList.remove("active");
+  } else {
+    document.getElementById("mobNav").style.width = 100%;
+    y.classList.add("active");
+  }
+}
