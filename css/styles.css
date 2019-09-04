@@ -52,9 +52,10 @@
 
 /*Hero*/
   #heroDiv{
-    height: 800px;
+    max-height: 1300px;
     width: 100%;
     top: 100px;
+    margin-bottom: 2%;
   }
 
   .heroImage{
@@ -96,21 +97,22 @@
 
 /*About*/
   #aboutDiv{
-    height: 450px;
+    height: 550px;
     width: 100%;
     padding-top: 3%;
     padding-bottom: 3%;
-    padding-left: 10%;
   }
 
   .aboutCont{
+    position: relative;
     height: 100%;
-    width: 90%;
+    min-width: 90%;
     padding-left: 0;
     padding-right: 0;
     border-color: black;
     border-style: solid;
     border-width: 3px;
+    margin-left: 5%;;
     display: inline-flex;
   }
 
@@ -164,7 +166,7 @@
   .aboutParags{
     height: 85%;
     width: 90%;
-    margin-top: 10%;
+    margin-top: 13%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -192,5 +194,53 @@
     to {opacity: 1;}
   }
 /*End About*/
+
+/*CTA*/
+  #ctaDiv{
+    height: 380px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+    .ctaImage{
+      height: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://drive.google.com/uc?export=view&id=1WwMkuiElqeV_lec_iVYfnenYBI1uEIsg);
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+
+    .ctaText{
+      text-align: center;
+      position: relative;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #efe9f4;
+    }
+
+    .ctaText h2{
+      font-family: 'Blinker', sans-serif;
+      font-weight: 600;
+    }
+
+    .ctaText h5{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+    }
+
+    #ctaButt{
+      font-family: 'Blinker', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      min-width: 13%;
+      height: 25%;
+      border-radius: 20px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 150%);
+    }
+/*End CTA*/
 
 /*End Desktop Styles*/
