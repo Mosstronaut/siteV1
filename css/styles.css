@@ -7,6 +7,9 @@
   #burger{
     display: none;
   }
+  #mobNav{
+    display: none;
+  }
 /*End Globals*/
 
 /*Desktop Styles*/
@@ -36,22 +39,24 @@
   object-fit: contain;
 }
 
-.headSocial{
-
+.headLinks{
+  width:100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  top: 8%;
 }
 
-#socials{
-  display: inline-flex;
-  position: relative;
-  margin-top: 8%;
-  left: 80%;
+.linkIndex{
+  font-family: 'Blinker', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #403d39;
+  padding-left: 8%;
 }
 
-.headFace,.headTwitt,.headInsta{
-  height: 50px;
-  width: 50px;
-  margin-left: 15%;
-  fill: #ff6f61;
+.linkIndex:hover{
+  text-decoration: none;
+  color: #403d39;
 }
 
 /*End Header*/
@@ -281,10 +286,23 @@
   }
 
   .footCR{
-    height: 80%;
     width: 80%;
     color: #efe9f4;
     margin-left: 25%;
+  }
+
+  #socials{
+    display: inline-flex;
+    position: relative;
+    margin-top: 10%;
+    left: 60%;
+  }
+
+  .footFace,.footTwitt,.footInsta{
+    height: 50px;
+    width: 50px;
+    padding: 5%;
+    fill: #ff6f61;
   }
 /*End Footer*/
 
@@ -293,8 +311,8 @@
 /*Mobile Styles*/
   @media screen and (max-width: 750px) {
 /*Mobile Burger Menu*/
-    #socials{
-      display: none;
+    .headLinks{
+      visibility: hidden;
     }
 
     #burger{
@@ -356,8 +374,54 @@
       display: block;
       transition: 0.3s;
     }
-
   /*End Mobile Menu Overlay*/
+
+  /*Mobile Hero*/
+    #heroDiv{
+      height: 800px;
+      width: 100%;
+      top: 100px;
+      margin-bottom: 2%;
+    }
+
+    .heroImage{
+      height: 100%;
+    }
+
+    .heroImg{
+      height: 100%;
+      object-fit: cover;
+    }
+  /*End Mobile Hero*/
+
+  /*Mobile CTA*/
+    #ctaButt{
+      transform: translate(-50%, 120%);
+    }
+  /*End Mobile CTA*/
+
+  /*Mobile Footer*/
+    .footImg{
+      height: 50%;
+      object-fit: contain;
+      margin-top: 20%;
+      margin-left: 10%;
+    }
+
+    .footCR{
+      width: 80%;
+      color: #efe9f4;
+      font-size: 12px;
+      margin-left: 25%;
+    }
+
+    #socials{
+      display: inline-flex;
+      position: relative;
+      margin-top: 15%;
+      left: 40%;
+    }
+  /*End Mobile Footer*/
 
   }
 /*End Mobile Styles*/

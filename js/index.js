@@ -17,13 +17,13 @@ function aboutTabs(evt, tabShow){
 
 function openNav(){
   var y;
-  y = document.getElementsByClassName("headBurger");
+  y = document.getElementById("burger");
 
   if (y.classList.contains("active")) {
-    document.getElementById("mobNav").style.width = 0%;
+    document.getElementById("mobNav").style.width = "0%";
     y.classList.remove("active");
   } else {
-    document.getElementById("mobNav").style.width = 100%;
+    document.getElementById("mobNav").style.width = "100%";
     y.classList.add("active");
   }
 }
